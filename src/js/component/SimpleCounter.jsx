@@ -7,8 +7,8 @@ import '../../SimpleCounter.css';
 
 function SimpleCounter(props) {
   return (
-    <div className="clockDisplay">
-      <div className="clockImg">
+    <div className="clockDisplay d-flex justify-content-center mt-5">
+      <div className="clockImg ps-4">
         <FontAwesomeIcon icon={faClock} />
       </div>
       <div className="six">{props.digitSix}</div>
@@ -16,7 +16,7 @@ function SimpleCounter(props) {
       <div className="four">{props.digitFour}</div>
       <div className="three">{props.digitThree}</div>
       <div className="two">{props.digitTwo}</div>
-      <div className="one">{props.digitOne}</div>
+      <div className="one pe-4">{props.digitOne}</div>
     </div>
   );
 }
